@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .button{
+        @apply py-3 px-5 text-xl rounded-md bg-neutral-dark-cyan text-neutral-white hover:bg-neutral-light-grayish-cyan hover:text-neutral-dark-cyan
+    }
+
+    html {
+      font-family: 'Space Mono', monospace, sans-serif;
+    }
+  }
